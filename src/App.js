@@ -1,12 +1,18 @@
 import './App.css';
 import Top from "./pages/top.js"
+import Header from "./components/header.js";
+import Footer from "./components/footer.js";
+import Hero from './components/hero';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
-	  <Top />
+		<Header />
+		<Hero />
+		<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+			<Top />
+		</div>
+		<Footer />
     </div>
   );
 }
