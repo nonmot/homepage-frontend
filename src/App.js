@@ -20,7 +20,7 @@ function App() {
 			<Header />
 			<div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 				<Routes>
-					<Route exact path='/top' element={<Top />} />
+					<Route exact path='/' element={<Top />} />
 					<Route exact path='/detail/1' element={<Detail />} />
 					<Route path='*' element={<NoMatch />} />
 				</Routes>
