@@ -36,7 +36,7 @@ export default function PostList() {
 			  	  <path d="M12 5l7 7-7 7"></path>
 			  	</svg>
 			    </a>
-				<Link to="/homepage-frontend/detail/1">Detail</Link>
+				<Link to="/detail/1">Detail</Link>
 			  </div>
 			</div>
 			);

@@ -16,12 +16,12 @@ import NoMatch from './components/NoMatch';
 function App() {
   return (
     <div className="App">
-		<Router>
+		<Router basename={process.env.PUBLIC_URL}>
 			<Header />
 			<div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 				<Routes>
-					<Route exact path='/homepage-frontend/top' element={<Top />} />
-					<Route exact path='/homepage-frontend/detail/1' element={<Detail />} />
+					<Route exact path='/top' element={<Top />} />
+					<Route exact path='/detail/1' element={<Detail />} />
 					<Route path='*' element={<NoMatch />} />
 				</Routes>
 			</div>
