@@ -21,7 +21,9 @@ function App() {
 			<div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 				<Routes>
 					<Route exact path='/' element={<Top />} />
-					<Route exact path='/detail/1' element={<Detail />} />
+					<Route exact path='/detail' element={<Detail />}>
+						<Route path=":postId" element={<Detail />} />
+					</Route>
 					<Route path='*' element={<NoMatch />} />
 				</Routes>
 			</div>
